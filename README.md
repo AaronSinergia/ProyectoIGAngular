@@ -1,0 +1,18 @@
+CUERPO DE LA WEB
+
+NAVBAR DE ENCIMA(
+PARA TI, INPUT DE BUSQUEDA CON LOGO DE LUPA, CORAZÓN
+)
+
+HISTORIA DE USUARIOS QUE SIGUES (IMG REDONDITA Y DEBAJO SU NOMBRE)
+
+BODY (
+IMGLOGUSER, H2
+H3
+img principal
+logo corazón, logo mensaje, logo mensaje privado, logo de publi guardada
+numero de me gustas
+mensaje de seguidores
+)
+
+NAVBAR (CASITA, BRUJULA, LOGO YOUTUBE, LOGO +, ENVIAR MENSAJE, FOTO REDONDA USER)
