@@ -58,7 +58,7 @@
   grid-area: 1/2;
 
 
-img[alt="magnifying_glass_logo"] {
+img[alt=magnifying_glass_logo] {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -83,7 +83,7 @@ input::placeholder {
   background-color: $greyBckgrnd;
 }
 
-img[alt="heart_logo"] {
+img[alt=heart_logo] {
   width: 30px;
   height: 25px;
   padding: 5px;
@@ -91,4 +91,132 @@ img[alt="heart_logo"] {
   margin-left: 10px;
   margin-right: 5px;
   }
+}
+
+.following {
+  display: none;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 3328px) {
+  .searchbar_div {
+    padding: 0;
+
+  &::after {
+    top: 62px;
+    left: 0px;
+    width: 100%;
+    }
+  }
+
+  .for_you_span {
+    margin-left: 240px;
+    white-space: nowrap;
+    font-size: 20px;
+    padding: 20px;
+  }
+  
+  .quote-icon{
+    display: none;
+  }
+
+  .following {
+    display: flex;
+    margin-left: 18px;
+    opacity: 0.3;
+  }
+
+  input {
+  display: none;
+  }
+
+  img[alt=heart_logo] {
+    display: none;
+ }
+
+ img[alt=magnifying_glass_logo] {
+  display: none;
+}
+}
+
+@media screen and (min-width: 960px) and (max-width: 1024px) {
+  .searchbar_div {
+    padding: 0;
+
+  &::after {
+    top: 62px;
+    left: 0px;
+    width: 100%;
+    }
+  }
+
+  .for_you_span {
+    margin-left: 240px;
+    white-space: nowrap;
+    font-size: 20px;
+    padding: 20px;
+  }
+  
+  .quote-icon{
+    display: none;
+  }
+
+  .following {
+    display: flex;
+    margin-left: 18px;
+    opacity: 0.3;
+  }
+
+  input {
+  display: none;
+  }
+
+  img[alt=heart_logo] {
+    display: none;
+ }
+
+ img[alt=magnifying_glass_logo] {
+  display: none;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .searchbar_div {
+    padding: 0;
+
+  &::after {
+    top: 62px;
+    left: 0px;
+    width: 100%;
+    }
+  }
+
+  .for_you_span {
+    margin-left: 80px;
+    white-space: nowrap;
+    font-size: 20px;
+    padding: 20px;
+  }
+  
+  .quote-icon{
+    display: none;
+  }
+
+  .following {
+    display: flex;
+    margin-left: 18px;
+    opacity: 0.3;
+  }
+
+  input {
+  display: none;
+  }
+
+  img[alt=heart_logo] {
+    display: none;
+ }
+
+ img[alt=magnifying_glass_logo] {
+  display: none;
+}
 }

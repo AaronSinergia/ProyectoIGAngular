@@ -1,0 +1,307 @@
+@import '_colors';
+
+
+nav {
+    display: grid;
+    position: sticky;
+    bottom: 0;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: $principalBckgrnd;
+    z-index: 1000;
+    padding: 10px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #00000028;
+        }
+}
+
+img{
+    width: 26px; 
+    height: 26px;
+    object-fit: cover;
+    justify-self: center; 
+    align-self: center;
+}
+
+img[alt=ig_letters_logo] {
+    display: none;
+}
+
+img[alt=ig_bw_logo] {
+    display: none;
+}
+
+img[alt=magnifying_glass_logo]{
+    display: none;
+}
+
+img[alt=home_logo]{
+width: 40px;
+}
+
+img[alt=plus_logo]{
+    width: 54px;
+}
+
+img[alt=user_logo]{
+display: none;
+}
+
+img[alt=three_stripes_logo]{
+    display: none;  
+}
+
+.h3_home,
+.h3_search,
+.h3_explore,
+.h3_reel,
+.h3_create,
+.h3_notifications,
+.h3_messages,
+.h3_profile,
+.h3_more {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 3328px) {
+    nav {
+        position: fixed;
+        grid-template-columns: 70px 150px;
+        grid-template-rows: repeat(10, 60px);
+        margin-right: 580px;
+        height: 100vh;
+        top: 10px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 240px;
+            top: 0;
+            height: 100%;
+            width:  1px;
+            background-color: #00000028;
+        }
+    }
+
+img[alt=ig_letters_logo] {
+        display: flex;
+        width: 120px;
+        margin-bottom: 30px;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    
+
+    img[alt=ig_bw_logo] {
+        display: none;
+    }
+
+    img[alt=home_logo]{
+        margin-left: 5px;
+    }
+
+    img[alt=magnifying_glass_logo]{
+        display: flex;
+        width: 33px;
+        height: 33px;
+        margin-left: 10px;
+    }
+
+    img[alt=plus_logo]{
+        margin-left: 0;
+    }
+
+    img[alt=three_stripes_logo]{
+        display: flex;
+        width: 23px;
+        height: 50px;
+        margin-top: 580px;
+    }
+
+    img[alt=user_logo]{
+        display: flex;
+        border: $borderStory;
+        border-radius: 50%;
+    }
+
+    img {
+        cursor: pointer;
+        margin-left: 14px;
+        justify-self: start;
+    }
+
+    .h3_home,
+    .h3_search,
+    .h3_explore,
+    .h3_reel,
+    .h3_create,
+    .h3_notifications,
+    .h3_messages,
+    .h3_profile,
+    .h3_more {
+        display: flex;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+
+    .h3_more{
+        margin-top: 310px;
+    }
+
+  }
+  
+  @media screen and (min-width: 960px) and (max-width: 1024px) {
+    nav {
+        position: fixed;
+        grid-template-columns: 70px 150px;
+        grid-template-rows: repeat(10, 60px);
+        margin-right: 580px;
+        height: 100vh;
+        top: 10px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 240px;
+            top: 0;
+            height: 100%;
+            width:  1px;
+            background-color: #00000028;
+        }
+    }
+
+img[alt=ig_letters_logo] {
+        display: flex;
+        width: 120px;
+        margin-bottom: 30px;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    
+
+    img[alt=ig_bw_logo] {
+        display: none;
+    }
+
+    img[alt=home_logo]{
+        margin-left: 5px;
+    }
+
+    img[alt=magnifying_glass_logo]{
+        display: flex;
+        width: 33px;
+        height: 33px;
+        margin-left: 10px;
+    }
+
+    img[alt=plus_logo]{
+        margin-left: 0;
+    }
+
+    img[alt=three_stripes_logo]{
+        display: flex;
+        width: 23px;
+        height: 50px;
+        margin-top: 580px;
+    }
+
+    img[alt=user_logo]{
+        display: flex;
+        border: $borderStory;
+        border-radius: 50%;
+    }
+
+    img {
+        cursor: pointer;
+        margin-left: 14px;
+        justify-self: start;
+    }
+
+    .h3_home,
+    .h3_search,
+    .h3_explore,
+    .h3_reel,
+    .h3_create,
+    .h3_notifications,
+    .h3_messages,
+    .h3_profile,
+    .h3_more {
+        display: flex;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+
+    .h3_more{
+        margin-top: 310px;
+    }
+
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 960px) {
+    nav {
+        position: fixed;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 60px);
+        height: 100vh;
+
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 75px;
+            top: 0;
+            height: 100%;
+            width:  1px;
+            background-color: #00000028;
+        }
+    }
+
+    img[alt=ig_letters_logo] {
+        display: none;
+    }
+
+    img[alt=ig_bw_logo] {
+        display: flex;
+        margin-top: 25px;
+        width: 20px;
+        height: 20px;
+    }
+
+    img[alt=home_logo]{
+        margin-right: 2px;
+        }
+
+    img[alt=magnifying_glass_logo]{
+        display: flex;
+        width: 33px;
+        height: 33px;
+    }
+
+    img[alt=three_stripes_logo]{
+        display: flex;
+        width: 23px;
+       height: 50px;
+       margin-top: 180px;
+    }
+
+    img[alt=user_logo]{
+        display: flex;
+        border: $borderStory;
+        border-radius: 50%;
+    }
+
+    img {
+        cursor: pointer;
+        margin-top: 50px;
+    }
+  }
+
+  
