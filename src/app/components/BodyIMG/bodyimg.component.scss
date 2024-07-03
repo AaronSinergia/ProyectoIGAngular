@@ -1,0 +1,86 @@
+ @import "_colors"; 
+
+.body_app_post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  }
+
+  .post {
+    display: grid;
+    }
+
+  .user_info {
+    display: grid;
+    grid-template-columns: 50px 260px 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 55px;
+  }
+
+
+  .profile_img {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: $borderStory;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 2px;
+  }
+
+  .profile_name {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    justify-self: baseline;
+   }
+
+  .more_info{
+    cursor: pointer;
+}
+
+  .user_post {
+    cursor: pointer;  
+    width: 345px;
+  }
+
+  .reactions{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 2px;
+
+    img[alt=heart_reaction_logo]{
+      cursor: pointer;
+      margin-top: 4px;
+      width: 23px;
+      height: 23px;
+    }
+    img[alt=comment_reaction_logo]{    
+      cursor: pointer;          
+      width: 30px;
+      height: 30px;
+    }
+    img[alt=message_reaction_logo]{     
+      cursor: pointer; 
+      margin-top: 5px;
+      width: 24px;
+      height: 22px;
+    }
+    img[alt=save_reaction_logo]{      
+      cursor: pointer;  
+      margin-top: 1px;
+      width: 25px;
+      height: 29px;
+    }
+  }
+
+  .comment_posted {
+    cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 30px;
+    margin-left: 2px;
+  }

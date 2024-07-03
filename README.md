@@ -1,18 +1,6 @@
-CUERPO DE LA WEB
+TODO:
 
-NAVBAR DE ENCIMA(
-PARA TI, INPUT DE BUSQUEDA CON LOGO DE LUPA, CORAZÓN
-)
-
-HISTORIA DE USUARIOS QUE SIGUES (IMG REDONDITA Y DEBAJO SU NOMBRE)
-
-BODY (
-IMGLOGUSER, H2
-H3
-img principal
-logo corazón, logo mensaje, logo mensaje privado, logo de publi guardada
-numero de me gustas
-mensaje de seguidores
-)
-
-NAVBAR (CASITA, BRUJULA, LOGO YOUTUBE, LOGO +, ENVIAR MENSAJE, FOTO REDONDA USER)
+1 - Poner iconitos debajo la foto todo siguales
+2 - Componetizar a saco todo lo posible según Angular
+3 - Revisar clases de scss bodyimg
+4 - Componetizar para no repetir codigo y que todas las fotos tengan comentario, ver traduccion, verlos 8 comentarios, y añade un comentario, como textos.

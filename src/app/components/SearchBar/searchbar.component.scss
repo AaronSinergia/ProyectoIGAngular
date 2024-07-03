@@ -2,14 +2,17 @@
 
 .searchbar_div {
   display: grid;
-  position: relative;
+  position: sticky;
+  top: 0;
   grid-template-columns: 120px 1fr;
   padding: 5px;
+  background-color: $principalBckgrnd;
+  z-index: 1000;
 
 &::after {
   content: "";
   position: absolute;
-  top: 60px;
+  top: 50px;
   left: 0;
   width: 100%;
   height: 1px;
@@ -22,10 +25,11 @@
   font-size: 25px;
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 7px;
   font-weight: bold;
   margin-right: auto;
   grid-area: 1/1;
+  cursor: pointer;
 }
 
 .quote-icon {
@@ -85,6 +89,6 @@ img[alt="heart_logo"] {
   padding: 5px;
   cursor: pointer;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 5px;
   }
 }

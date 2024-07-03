@@ -1,0 +1,60 @@
+@import '_colors';
+
+.img_users_carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 6px;
+  
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 140px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #0000000a;
+    }
+
+  .image_wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin-left: 10px;
+    animation: slide 15s linear infinite;
+  }
+
+  .carousel-item-container {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    width: 75px;
+    
+    .carousel-item {
+      width: 55px; 
+      height: 55px; 
+      border: $borderStory; 
+      border-radius: 50%;
+      object-fit: cover; 
+    }
+
+    .username {
+      margin-top: 5px;
+      font-size: 10px;
+      text-align: center;
+      white-space: nowrap; 
+      width: 100%; 
+    }
+  }
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-60% - 0px));
+  }
+}

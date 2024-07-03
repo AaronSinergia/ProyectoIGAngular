@@ -1,17 +1,35 @@
-import { Component } from "@angular/core";
-import { usersImgCarousel } from "../../utils/usersImgCarousel/usersimgcarousel";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-userstories', 
-template: `
-<div *ngFor="let imagePath of images">
-<img [src]="imagePath" alt="Image" />
-</div>
-`,
-    styleUrls: ['./userstories.component.css'],
-    standalone: true, 
+  selector: 'app-userstories',
+  templateUrl: './userstories.component.html',
+  styleUrls: ['./userstories.component.scss'],
+  standalone: true,
 })
+// export class UserStoriesComponent { }
+export class UserStoriesComponent implements OnInit {
+  usersImgCarousel: string[] = [
+    '/assets/usersImgs/image1.jpg',
+    '/assets/usersImgs/image2.jpg',
+    '/assets/usersImgs/image3.jpg',
+    '/assets/usersImgs/image4.jpg',
+    '/assets/usersImgs/image5.jpg'
+  ];
+  currentIndex = 0;
 
-export class UserStoriesComponent  {
-    images: string[] = usersImgCarousel;
- }
+  constructor() { }
+
+  ngOnInit(): void {
+    setInterval(() => {
+      this.moveCarousel();
+    }, 3000); // Cambia la imagen cada 3 segundos
+  }
+
+  moveCarousel(): void {
+    if (this.currentIndex < this.usersImgCarousel.length - 1) {
+      this.currentIndex++;
+    } else {
+      this.currentIndex = 0;
+    }
+  }
+}
