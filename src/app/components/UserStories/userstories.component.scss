@@ -63,17 +63,29 @@
 @media screen and (min-width: 1024px) and (max-width: 3328px) {
   .img_users_carousel {
     padding: 15px 0 0 0;
+
+    &::after {
+      top: 170px;
+      }
   }  
 }
 
 @media screen and (min-width: 960px) and (max-width: 1024px) {
   .img_users_carousel {
     padding: 15px 0 0 0;
+
+    &::after {
+      top: 170px;
+      }
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 960px) {
   .img_users_carousel {
     padding: 15px 0 0 0;
+
+    &::after {
+      top: 170px;
+      }
   }
 }
