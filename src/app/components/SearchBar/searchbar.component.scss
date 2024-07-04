@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   grid-template-columns: 120px 1fr;
-  padding: 5px;
+  padding: 5px 0;
   background-color: $principalBckgrnd;
   z-index: 1000;
 
@@ -89,7 +89,7 @@ img[alt=heart_logo] {
   padding: 5px;
   cursor: pointer;
   margin-left: 10px;
-  margin-right: 5px;
+  margin-right: 10px;
   }
 }
 

@@ -6,7 +6,6 @@ import { NavBarComponent } from './app/components/NavBar/navbar.component';
 import { BodyImgComponent } from './app/components/BodyIMG/bodyimg.component';
 import { UserStoriesComponent } from './app/components/UserStories/userstories.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
